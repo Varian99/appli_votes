@@ -1,0 +1,64 @@
+{
+    "UserAttributes": [
+      {
+        "PutRequest": {
+          "Item": {
+            "userId": { "S": "71c960ee-80e1-7074-c39e-dccae3ce6dd7" },
+            "firstName": { "S": "Alice" },
+            "lastName": { "S": "Rousseaux" },
+            "birthDate": { "S": "18 janvier 2002" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "userId": { "S": "6179009e-50e1-7045-5abd-5a45758b925d" },
+            "firstName": { "S": "Pierre" },
+            "lastName": { "S": "Lebon" },
+            "birthDate": { "S": "13 septembre 1989" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "userId": { "S": "f199402e-c021-706e-91b4-7ddc2f74fc77" },
+            "firstName": { "S": "Jean" },
+            "lastName": { "S": "Dupont" },
+            "birthDate": { "S": "18 janvier 2002" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "userId": { "S": "1139900e-d0b1-701d-00c2-eae3d83257cb" },
+            "firstName": { "S": "Jeanne" },
+            "lastName": { "S": "Colot" },
+            "birthDate": { "S": "26 juin 1962" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "userId": { "S": "a149d0ee-d0e1-702a-f72f-304c3e697e2b" },
+            "firstName": { "S": "Serge" },
+            "lastName": { "S": "Deschamps" },
+            "birthDate": { "S": "3 décembre 1986" }
+          }
+        }
+      },
+      {
+        "PutRequest": {
+          "Item": {
+            "userId": { "S": "51e9e0ce-50c1-70c7-a9bb-3dd7fa704da7" },
+            "firstName": { "S": "Emilie" },
+            "lastName": { "S": "Forgeron" },
+            "birthDate": { "S": "15 octobre 1996" }
+          }
+        }
+      }
+    ]
+  }
