@@ -4,6 +4,7 @@ import "@aws-amplify/ui-vue/styles.css";
 
 import { Amplify } from 'aws-amplify';
 import outputs from '../amplify_outputs.json';
+import UserProfile from './components/UserProfile.vue';
 
 Amplify.configure(outputs);
 </script>
@@ -14,6 +15,7 @@ Amplify.configure(outputs);
       <div v-if="user">
         <h1>Bienvenue, {{ user.username }} !</h1>
         <button @click="signOut">Se déconnecter</button>
+        <UserProfile />
       </div>
       <div v-else>
         <h2>Veuillez vous connecter pour accéder à l'application de vote.</h2>
@@ -22,15 +24,7 @@ Amplify.configure(outputs);
   </authenticator>
 </template>
 
-<template>
-  <div>
-    <UserProfile />
-  </div>
-</template>
-
 <script>
-import UserProfile from './components/UserProfile.vue';
-
 export default {
   components: {
     UserProfile
