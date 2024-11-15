@@ -1,5 +1,8 @@
 <script>
-import { API } from 'aws-amplify';
+//import { API } from '@aws-amplify/api';
+
+import { generateClient } from 'aws-amplify/api';
+const API = generateClient();
 
 export default {
   data() {
@@ -23,9 +26,9 @@ export default {
   <div>
     <h2>Profil de l'utilisateur</h2>
     <div v-if="user">
-      <p>Nom : {{ user.nom }}</p>
-      <p>Prénom : {{ user.prenom }}</p>
-      <p>Date de naissance : {{ user.dateNaissance }}</p>
+      <p>Nom : {{ user.lastName }}</p>
+      <p>Prénom : {{ user.firstName }}</p>
+      <p>Date de naissance : {{ user.birthDate }}</p>
     </div>
     <div v-else>
       <p>Chargement des informations...</p>
