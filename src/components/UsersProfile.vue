@@ -28,9 +28,10 @@ export default {
     async handleCandidateClick(candidate) {
       const endpointVote = 'https://2bpooveiq9.execute-api.eu-west-3.amazonaws.com/prod/vote_for';
       try {
+        console.log(`${endpointVote}?username=${this.user}&candidate_id=${candidate.candidateId}`)
         const response = await axios.put(`${endpointVote}?username=${this.user}&candidate_id=${candidate.candidateId}`, {}, {
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json3',
           },
         });
         console.log('Réponse du serveur après le vote:', response.data);
